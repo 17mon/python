@@ -2,10 +2,8 @@
 # coding: utf-8
 
 import struct
-from socket import gethostbyname
 from socket import inet_aton
 import os
-import functools
 
 _unpack_V = lambda b: struct.unpack("<L", b)
 _unpack_N = lambda b: struct.unpack(">L", b)
@@ -23,7 +21,7 @@ def load(file):
             offset, = _unpack_N(dat[:4])
             index = dat[4:offset]
     except:
-        print "cannot open file 17monipdb.dat"
+        print "cannot open file %s" % file
         exit(0)
 
 def find(ip):

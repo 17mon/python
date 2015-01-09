@@ -21,7 +21,7 @@ def load(file):
             offset, = _unpack_N(dat[:4])
             index = dat[4:offset]
     except:
-        print "cannot open file 17monipdb.dat"
+        print "cannot open file %s" % file
         exit(0)
 
 def find(ip):
