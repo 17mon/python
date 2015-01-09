@@ -1,8 +1,10 @@
+import os
+
 import IP
 import IPX
 
-IP.load("mydata4vipday2.dat")
+IP.load(os.path.abspath("mydata4vipday2.dat"))
 print IP.find("118.28.8.8")
 
-IPX.load("mydata4vipday2.datx")
+IPX.load(os.path.abspath("mydata4vipday2.datx"))
 print IPX.find("118.28.8.8")

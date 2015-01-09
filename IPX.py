@@ -16,7 +16,8 @@ index = 0
 def load(file):
     global dat,offset,index
     try:
-        with open(os.path.join(os.path.dirname(__file__), file), "rb") as f:
+        path = os.path.abspath(file)
+        with open(path, "rb") as f:
             dat = f.read()
             offset, = _unpack_N(dat[:4])
             index = dat[4:offset]
