@@ -22,3 +22,6 @@
 使用说明
 
 	 IP[X].load 方法可以在应用程序入口加载库文件
+	 
+如果出现 UnicodeEncodeError 应该是您的系统字符集不是utf8所致。
+解决方法：export LANG=en_US.UTF-8 && python main.py
