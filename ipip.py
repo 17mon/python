@@ -24,8 +24,8 @@ class IP:
                 IP.offset, = _unpack_N(IP.binary[:4])
                 IP.index = IP.binary[4:IP.offset]
         except Exception as ex:
-            print "cannot open file %s" % file
-            print ex.message
+            print("cannot open file %s" % file)
+            print(ex)
             exit(0)
 
     @staticmethod
@@ -72,8 +72,8 @@ class IPX:
                 IPX.offset, = _unpack_N(IPX.binary[:4])
                 IPX.index = IPX.binary[4:IPX.offset]
         except Exception as ex:
-            print "cannot open file %s" % file
-            print ex.message
+            print("cannot open file %s" % file)
+            print(ex)
             exit(0)
 
     @staticmethod
