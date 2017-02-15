@@ -9,5 +9,5 @@ setup(
     author='17mon',
     maintainer='myiwen',
     url='http://ipip.net',
-    packages=['ipip'],
+    packages=['.'],
 )
